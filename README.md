@@ -1,8 +1,9 @@
-#First Challenge: UserInput and UserOutput
+# First Challenge: UserInput and UserOutput
 
 This is the first challenge in the course [React 16.6 - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux).
 
-#####The instructions are:
+##### The instructions are:
+
 
 * Create TWO new components: UserInput and UserOutput
 * UserInput should hold an input element, UserOutput two paragraphs
@@ -15,7 +16,7 @@ This is the first challenge in the course [React 16.6 - The Complete Guide](http
 * Add two-way-binding to your input (in UserInput) to also display the starting username
 * Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
 
-#### Result: 
+##### Result: 
 
 ![Image not found](public/result.png)
 
