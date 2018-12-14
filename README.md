@@ -4,6 +4,7 @@ This is the first challenge in the course [React 16.6 - The Complete Guide](http
 
 ##### The instructions are:
 
+
 * Create TWO new components: UserInput and UserOutput
 * UserInput should hold an input element, UserOutput two paragraphs
 * Output multiple UserOutput components in the App component (any paragraph texts of your choice)
