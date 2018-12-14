@@ -1,25 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import UserInput from "./UserInput/UserInput";
+import UserOutput from "./UserOutput/UserOutput";
 
 class App extends Component {
+
+  state={
+    username : 'username'
+  };
+
+  custom = {
+    backgroundColor:'#343434',
+    color:'#dfdfdf',
+    minHeight:'60px'
+  };
+
+  changeTextHandler=(evt)=>{
+    const newValue= evt.target.value;
+    this.setState({username:newValue});
+  };
+
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>Challenge 1</h1>
+        <div style={this.custom}>
+          <UserOutput title="Entry 1" value={this.state.username}/>
+        </div>
+        <div style={ {backgroundColor:'#3434a4',color:'#dfdfdf',minHeight:'60px'} }>
+         <UserOutput style={this.custom} title="Entry 2" value={this.state.username}/>
+        </div>
+        <div className='custom'>
+          <UserOutput style={this.custom} title="Entry 3" value={this.state.username}/>
+        </div>
+        <div className='input-changed'>
+          <UserInput value={this.state.username} onChange={this.changeTextHandler}/>
+        </div>
       </div>
     );
   }
